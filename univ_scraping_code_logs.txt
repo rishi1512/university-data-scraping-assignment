@@ -1,0 +1,61 @@
+University & Course Data Scraping – Assignment Summary
+
+What I did:
+
+Selected 5 universities from different countries.
+
+Used Python with requests and BeautifulSoup to scrape undergraduate program pages.
+
+Extracted course names dynamically from the HTML.
+
+Structured the data into two tables:
+
+Universities
+
+Courses
+
+Linked both tables using university_id.
+
+Exported the final dataset into an Excel file with two sheets.
+
+Issues I faced:
+
+Many non-course links were getting scraped, such as:
+
+Open days
+
+Why study at...
+
+Fees pages
+
+Feedback
+
+Our history
+
+Some universities had different page structures.
+
+Initially, I filtered using text length, but that removed valid short program names.
+
+How I solved them:
+
+Added keyword-based filtering to remove navigation/admin pages.
+
+Introduced positive validation to accept only degree-like program names.
+
+Removed length-based filtering and relied on academic keywords instead.
+
+Ensured relational integrity by verifying university_id before exporting.
+
+Used pandas to remove duplicates and structure the data cleanly.
+
+Final Result:
+
+5 universities collected.
+
+Valid academic programs extracted for each.
+
+Data cleaned and structured.
+
+Proper relational linking maintained.
+
+Fully automated (no manual copy-paste).
